@@ -1,7 +1,0 @@
-Filename: [Error Icon]
-Message blocked
-Your message to codom@wilco.org has been blocked. See technical details below for more information.
-The response from the remote server was:
-
-550 5.4.1 Recipient address rejected: Access denied. AS(201806281) [BL0GCC02FT020.eop-gcc02.prod.protection.outlook.com]
-

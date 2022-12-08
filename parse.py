@@ -11,5 +11,5 @@ for file in file_list:
         fnm = os.path.splitext(file)[0] + '.txt'
         txt = msg.get_body(preferencelist=('plain')).get_content()
         with open(fnm, 'w') as f:
-            print('Filename:', txt, file = f)
+            print('Filename:', txt, file = f, end="")
 
