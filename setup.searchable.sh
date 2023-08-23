@@ -14,3 +14,4 @@ do
     rm cscope.* tags || true; find . -type f -name \*.txt -exec echo \"{}\" \; > cscope.files
     cat cscope.files | xargs cscope -b
 done
+dos2unix `find . -type f -iname "*.txt"`

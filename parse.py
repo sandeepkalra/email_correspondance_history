@@ -13,5 +13,7 @@ for file in file_list:
         oldFnm = "[\""+pwd+"/"+file+"\"]\r\n"
         fnm = fnm.replace(" ", "_")
         content = msg.get_body(preferencelist=('plain')).get_content()
-        with open(fnm, 'w') as f:
-            print('Filename:', oldFnm, content, file=f, end="")
+        content = content.replace('\r', ' ')
+        content = f"Filename: {oldFnm}, Content\n {content}"
+        with open(fnm, 'w', newline="\n") as f:
+            f.write(content)
